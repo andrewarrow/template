@@ -16,3 +16,7 @@ func setList(title string, l *widgets.List) {
 func add(l *widgets.List, s string) {
 	l.Rows = append(l.Rows, s)
 }
+
+func prepend(l *widgets.List, s string) {
+	l.Rows = append([]string{s}, l.Rows...)
+}
