@@ -32,6 +32,9 @@ func (c *Template) Run() {
 	c.transfer.Border = false
 	setList("Right", c.destination)
 
+	add(c.source, "hi")
+	add(c.source, "there")
+
 	grid := ui.NewGrid()
 	termWidth, termHeight := ui.TerminalDimensions()
 	grid.SetRect(0, 0, termWidth, termHeight)

@@ -12,3 +12,7 @@ func setList(title string, l *widgets.List) {
 	l.TextStyle.Bg = ui.ColorBlack
 	l.Title = title
 }
+
+func add(l *widgets.List, s string) {
+	l.Rows = append(l.Rows, s)
+}
